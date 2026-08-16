@@ -60,13 +60,13 @@
   }
 
   .wrap{
-    max-width:1120px;
+    max-width:1280px;
     margin:0 auto;
-    padding:0 28px;
+    padding:0 32px;
   }
 
-  @media (min-width:1400px){
-    .wrap{max-width:1240px; padding:0 40px;}
+  @media (min-width:1500px){
+    .wrap{max-width:1440px; padding:0 48px;}
   }
 
   /* ---------- topbar ---------- */
@@ -84,17 +84,18 @@
     gap:14px;
   }
   .logo-chip{
-    width:42px; height:42px;
+    height:52px;
     background:#fff;
     border:1px solid var(--mist);
     border-radius:4px;
     display:flex; align-items:center; justify-content:center;
-    padding:5px;
+    padding:6px 14px;
     flex-shrink:0;
   }
   .topbar-logo{
-    width:100%;
     height:100%;
+    width:auto;
+    max-width:220px;
     object-fit:contain;
     display:block;
   }
@@ -137,6 +138,9 @@
 
   @media (min-width:900px){
     .plate{padding:56px 64px;}
+  }
+  @media (min-width:1500px){
+    .plate{padding:64px 80px;}
   }
 
   @keyframes rise{
@@ -542,16 +546,17 @@
     gap:12px;
   }
   .lasalle .mark{
-    width:44px; height:44px;
-    border-radius:3px;
+    height:48px;
+    border-radius:4px;
     background:#fff;
     border:1px solid var(--mist);
     display:flex; align-items:center; justify-content:center;
     flex-shrink:0;
-    padding:5px;
+    padding:6px 12px;
   }
   .lasalle .mark img{
-    width:100%; height:100%;
+    height:100%; width:auto;
+    max-width:180px;
     object-fit:contain;
   }
   .lasalle-text{font-size:0.78rem; color:var(--ink-soft); max-width:42ch;}
